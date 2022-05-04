@@ -30,7 +30,7 @@ void solve(double (*f)(int, double), double a, double b, double err, int num){
         cout << "There is no solution in the given interval." << endl;
     } else {
         double x;
-        while (b - a > err){
+        while (fabs(b - a) > err){
             x = (a + b)/2;
             if (f(num, x)*fa < 0){
                 b = x;
