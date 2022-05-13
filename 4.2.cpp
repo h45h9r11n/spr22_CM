@@ -8,7 +8,7 @@ void prt_mat(vector<vector<double>> a, int n) {
     int i, j;
     for (i = 0; i < n; i++) {
         for (j = 0; j < n; j++)
-            cout << " " << setprecision(1) << fixed << a[i][j] << " \t";
+            cout << " " << setprecision(6) << fixed << a[i][j] << " \t";
         cout << "\n";
     }
 }
