@@ -17,7 +17,7 @@ void prt_mat(double ** a, int n) {
     int i, j;
     for (i = 0; i < n; i++) {
         for (j = 0; j < n; j++)
-            cout << " " << std::setprecision(1) << std::fixed << a[i][j] << " \t";
+            cout << " " << std::setprecision(6) << std::fixed << a[i][j] << " \t";
         cout << "\n";
     }
 }
