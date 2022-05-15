@@ -43,7 +43,6 @@ vector < double > proj_vec(vector < double > a, vector < double > b) {
     return res;
 }
 
-
 void gram_schmidt(vector <vector <double>> a, int n){
     vector < double > proj;
     for (int i = 0; i < n; i++) {
