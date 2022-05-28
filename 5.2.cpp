@@ -48,6 +48,7 @@ void interpolationGauss(double *x, double *y, double **delta, int h, int n){
         return;
     } else z = i;
     cout << "u = " << u <<" is found at f(" << delta[z][0] << ")" <<endl;
+    
     for (j = 1, i = 0; j <= n; j++) {
         y0 += m * delta[z - i][j];
         if (j % 2 == 1) m *= (u + double(i)) / (double)(j);
